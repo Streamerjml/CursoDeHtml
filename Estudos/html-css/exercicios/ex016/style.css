@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;  
+
+
 }
+
+
 
 body{
     background-image: linear-gradient(to bottom, #FCAEC4 ,#C03D62);
+    height: 100vh;  
 }
 
 main{
@@ -23,7 +28,7 @@ h1{
 }
 
 h2{
-    color: #D090A2;
+   color: #D090A2;
 }
 p{
     text-align: justify;
