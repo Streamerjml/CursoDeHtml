@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+
+        /* SELETORES PERSOANLIZADOS-
+           # = id
+           . = class
+           : = pseudo-class
+          :: = pseudo-element
+           > = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;   }
+        a{
+            color: palevioletred;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: plum;
+        }
+        a:hover {
+            color: violet;
+            text-decoration: underline;
+            font-weight: 800;
+        }
+        a:active{
+            color: blueviolet;
+        }
+        .importante::before{
+            content: '⇒';
+        }
+
+        a.importante{
+            background-color: rgb(255, 214, 243);
+            color: purple;
+        }
+
+        a.importante:after{
+            content: '⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(92, 206, 172);
+        }
+    </style>
+    <title>Links</title>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Streamerjml" target="_blank" >GitHub</a></li>
+        <li><a href="https://youtube.com" target="_blank" class="importante">Youtube</a></li>
+        <li><a href="https://www.linkedin.com/in/jean-pierre-barbosa-de-andrade/" target="_blank">Linkedin</a></li>
+    </ul>
+</body>
+</html>
