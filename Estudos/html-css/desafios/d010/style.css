@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import "../d010/assets/fonts/idroid.otf";
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(155, 255, 185);
+}
+
+header{
+    background-image: linear-gradient(to bottom ,rgb(83, 207, 120)20%,rgb(7, 151, 7) 70% , rgb(1, 58, 1));
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    }
+    header>h1 {
+        text-align: justify;
+    }
+    header>p {
+        text-align: justify;
+    }
+    header>nav{
+        text-align: left;
+    }
+    header>nav>a{
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    main{
+        border-radius: 5px;
+        background-color: aliceblue;
+        padding: 25px;
+        margin: 0% 50px;
+        text-align: justify;
+    }
+    main>iframe{
+        
+    }
+
+    main>section>article{
+        margin : 0px;
+        padding: 10px;
+        background-color: aquamarine;
+    }
+    main>section>article>h4{
+        color:white;
+        background-color: rgb(52, 206, 155);
+    }
+
+    footer{
+    text-align: center;
+    background-color: green;
+    color: white;
+    margin: -30px;
+    margin-top: 5px;
+    
+}
+

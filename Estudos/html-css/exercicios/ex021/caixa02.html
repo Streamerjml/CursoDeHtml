@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Gruping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: powderblue;
+        }
+
+        header{
+            width: 600px;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(255, 142, 240);
+            padding: 3px;
+            box-shadow: 2px  2px 4px 1px rgba(0, 0, 0, 0.315);
+            
+         }
+        nav>a{
+            text-decoration: none;
+            color: rgb(125, 240, 125);
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+
+        nav>a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: rgb(250, 201, 247);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+        section#assuntos{
+            border-radius: 4px 20px 20px 20px;
+            background-color: plum;
+            color: blueviolet;
+            font-weight: bold;
+            padding: 5px;
+            margin: 3px;
+        }
+        article{
+            background-color: rgb(255, 167, 243);
+            padding: 20px;            
+            border-radius: 2px 25px 25px 25px;
+            margin: 3px;
+        }
+        article>aside{
+            background-color: rgb(255, 142, 240);
+            margin: 1px;
+            padding: 1.5px;
+            border-radius: 3px;
+            outline: 10px;
+        }
+
+        footer{
+            background-color: plum;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0;
+        }
+
+    footer>p{
+        margin: 0;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#" target="_blank" rel="noopener noreferrer">Link</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Link</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Link</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Link</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Link</a>
+        </nav><!-- tag semantica para links (menu de navegaçao) -->
+    </header><!-- tag semantica para cabeçalho -->
+    <main>
+       <section id="assuntos">
+           Esporte Politica Tecnologia
+       </section> <!-- tag para separar os conteudos detro do main -->
+       <section id="noticias">
+           <article>
+               <h2>Noticias sobre algo</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam optio possimus rem tempore sed suscipit, veniam sint molestiae hic dignissimos dicta quasi quae voluptatibus vitae dolorem aliquam? Dignissimos, iste in!</p>
+               <aside>
+                   Artigo escrito por José da Silva
+               </aside> <!-- tag para conteudos periféricos ou relativos aos artigos -->
+           </article><!-- separa os artigos dentos dos sessoes -->
+           <article>
+               <h3>Noticias sobre algo</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, sit! Id, vel quaerat cupiditate sequi deserunt harum explicabo veritatis esse magni molestiae eligendi adipisci, eveniet hic accusantium sed. Tenetur, quas.</p>
+           </article>
+       </section>
+    </main><!-- tag semantica para conteudo principal -->
+    <footer>
+        <p>Desenvolvido por Jean o Mago!</p>
+    </footer><!-- tag semantica para roda pé -->
+</body>
+</html>
